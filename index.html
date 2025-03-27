@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,24 +8,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Microcontroller Dashboard</h1>
-    <div class="control-panel">
-        <div class="control">
-            <label for="toggle">Digital Output:</label>
-            <input type="checkbox" id="toggle" onchange="toggleOutput(this)">
-        </div>
-        <div class="control">
-            <label for="slider">Analog Input:</label>
-            <input type="range" id="slider" min="0" max="1023" oninput="updateSliderValue(this.value)">
-            <span id="sliderValue">512</span>
-        </div>
-        <div class="control">
-            <label for="gauge">Analog Output:</label>
-            <div id="gauge" class="gauge">
-                <div class="gauge-fill" id="gaugeFill"></div>
-                <div class="gauge-cover" id="gaugeCover">50%</div>
+    <div class="container">
+        <h1>Microcontroller Dashboard</h1>
+        <div class="analog-section">
+            <h2>Analog Inputs</h2>
+            <div id="analog-inputs">
+                <!-- Analog input elements will be added here by JavaScript -->
             </div>
-            <input type="range" id="gaugeSlider" min="0" max="100" oninput="updateGauge(this.value)">
+        </div>
+        <div class="digital-section">
+            <h2>Digital Inputs/Outputs</h2>
+            <div id="digital-ports">
+                <!-- Digital input/output elements will be added here by JavaScript -->
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
