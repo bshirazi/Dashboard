@@ -1,1 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.analog-section, .digital-section {
+    margin-top: 20px;
+}
+
+.port {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.port:last-child {
+    border-bottom: none;
+}
+
+.port-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.port-value {
+    font-size: 1.2em;
+    color: #333;
+}
