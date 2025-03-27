@@ -34,7 +34,10 @@ function updateDigitalPorts() {
         portDiv.className = 'port';
         portDiv.innerHTML = `
             <div class="port-label">${port.id} (${port.type})</div>
-            <div class="port-value">${port.state}</div>
+            <label class="toggle-switch">
+                <input type="checkbox" ${port.state === 'HIGH' ? 'checked' : ''}>
+                <span class="slider"></span>
+            </label>
         `;
         digitalPortsContainer.appendChild(portDiv);
     });
